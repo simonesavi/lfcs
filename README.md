@@ -10,7 +10,7 @@ These notes are based on *CentOS* distribution.
 
 [Essential Commands - 25%](EssentialCommands.md)
 
-Operation of Running Systems - 20%
+[Operation of Running Systems - 20%](OperationofRunningSystems.md)
 
 User and Group Management - 10%
 
