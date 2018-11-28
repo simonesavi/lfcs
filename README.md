@@ -12,7 +12,7 @@ These notes are based on *CentOS* distribution.
 
 [Operation of Running Systems - 20%](OperationofRunningSystems.md)
 
-User and Group Management - 10%
+[User and Group Management - 10%](UserandGroupManagement.md)
 
 Networking - 12%
 

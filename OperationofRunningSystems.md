@@ -1,3 +1,5 @@
+# Operation of Running Systems
+
 ## Boot, reboot, and shut down a system safely
 
 * `shutdown -h now` shutdown
@@ -509,11 +511,13 @@ yum
 
 * *Repository*: collections of software packages used by yum. They are configured in `/etc/yum.repos.d`
 * `yum info package` Information on package
+
   * If package is installed Repo will be equal to "installed"
 * `yum install package` Install package
 * `yum provides */file` Search package that contain file
 * `yum remove package`Remove package
 * `yumdownloader package` download the RPM package
+
   * **NOTE**: require `yum -y install yum-utils`
 
 
@@ -531,7 +535,7 @@ RPM
 
 
 
-* `ldd command` Show all libraries used by command
+* `ldd path/command` Show all libraries used by command
 * This info is contained in a library cache
 * The library cache can be re-build using `ldconfing`
 * The library cache is in /etc/ld.so.cache
