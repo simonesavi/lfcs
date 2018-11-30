@@ -6,6 +6,8 @@ The structure of notes is prepared following [***Certification Preparation Guide
 
 These notes are based on *CentOS* distribution.
 
+These notes cannot be considered as unique source of information to prepare LFCS exam, but can be used as guideline to understand which topics you must be able to manage to pass the exam.
+
 ## Domains & Competencies
 
 [Essential Commands - 25%](EssentialCommands.md)
@@ -14,7 +16,7 @@ These notes are based on *CentOS* distribution.
 
 [User and Group Management - 10%](UserandGroupManagement.md)
 
-Networking - 12%
+[Networking - 12%](Networking.md)
 
 Service Configuration - 20%
 
