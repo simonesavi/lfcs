@@ -252,7 +252,7 @@ CHRONYD
 
 
 
-* **NOTE**: if some of the command below doesn't works please refer to this bug [https://bugzilla.redhat.com/show_bug.cgi?id=1574418](https://bugzilla.redhat.com/show_bug.cgi?id=1574418)
+* **NOTE**: if some of the commands below doesn't work please refer to this bug [https://bugzilla.redhat.com/show_bug.cgi?id=1574418](https://bugzilla.redhat.com/show_bug.cgi?id=1574418)
   * Simple solution: `setenforce 0`
   * Package `selinux-policy-3.13.1-229` should resolve problem
 
