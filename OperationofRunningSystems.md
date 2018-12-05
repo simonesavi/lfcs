@@ -364,11 +364,19 @@ cron.*                                                  /var/log/cron
 
 ## Update software to provide required functionality and security
 
-* `yum update` not remove obsolete packages
+* `yum update` 
+* Yum also offers the upgrade command that is equal to update with enabled `obsoletes` configuration option. By default, obsoletes is turned on in `/etc/yum.conf`, which makes these two commands equivalent.
+* The `obsoletes` option enables the obsoletes process logic during updates.When one package declares in its spec file that it *obsoletes* another package, the latter package is replaced by the former package when the former package is installed. Obsoletes are declared, for example, when a package is renamed
 
-  or
 
-  `yum upgrade` remove obsolete packages
+
+References:
+
+* [https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-yum](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-yum)
+
+* [https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sec-Configuring_Yum_and_Yum_Repositories#sec-Setting_main_Options](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/sec-Configuring_Yum_and_Yum_Repositories#sec-Setting_main_Options)
+
+
 
 ## Verify the integrity and availability of resources
 
