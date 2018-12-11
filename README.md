@@ -18,9 +18,9 @@ These notes cannot be considered as unique source of information to prepare LFCS
 
 [Networking - 12%](Networking.md)
 
-Service Configuration - 20%
+[Service Configuration - 20%](ServiceConfiguration.md)
 
-Storage Management - 13%
+[Storage Management - 13%](StorageManagement.md)
 
 ## Other similar open source projects
 
