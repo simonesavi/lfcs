@@ -16,7 +16,8 @@
   options {
           listen-on port 53 { 127.0.0.1; 192.168.0.0/24; };
   		...
-          allow-query     { localhost; 192.168.0.0/24; };
+          allow-query        { localhost; 192.168.0.0/24; };
+          allow-query-cache  { localhost; 192.168.0.0/24; };
   		...
           recursion yes;
           forwarders {
@@ -40,6 +41,8 @@
   * `listen-on port 53` tell on which network interfaces and port to accept client queries.
 
   * `allow-query` defines the networks from which clients can post DNS requests.
+  
+  * `allow-query-cache` defines the addresses/networks from which clients are allowed to issue queries that access the local cache.
 
   * `forwarders` specifies the name servers to which DNS requests should be forwarded if they cannot be resolved directly. 
 
