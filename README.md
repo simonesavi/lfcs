@@ -2,9 +2,9 @@
 
 These are my notes that I have wrote during my preparation for [LFCS exam](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/).
 
-The structure of notes is prepared following [***Certification Preparation Guide - August 2018***](https://training.linuxfoundation.org/resources/publications/certification-preparation-guide/).
+The notes structure is based on [***Certification Preparation Guide - August 2018***](https://training.linuxfoundation.org/resources/publications/certification-preparation-guide/).
 
-These notes are based on *CentOS* distribution.
+These notes contain instructions/commands for *CentOS* distribution.
 
 These notes cannot be considered as unique source of information to prepare LFCS exam, but can be used as guideline to understand which topics you must be able to manage to pass the exam.
 
