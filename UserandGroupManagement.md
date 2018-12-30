@@ -18,7 +18,7 @@ useradd
   CREATE_MAIL_SPOOL=yes
   ```
 
-  *GROUP=100* -> defult group
+  *GROUP=100* -> default group
 
   *HOME=/home* -> base for home directory
 
