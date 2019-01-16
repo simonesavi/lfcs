@@ -290,7 +290,7 @@ Delete RAID
 
 * Unmount device
 * `mdadm --stop /dev/md0`
-* `mdadm --zero-superblock /deb/sbc2` It clean partition that, after, can be reused
+* `mdadm --zero-superblock /dev/sbc2` It clean partition that, after, can be reused
 
 
 
