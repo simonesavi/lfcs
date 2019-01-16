@@ -524,6 +524,7 @@ yum
 * `yum install package` Install package
 * `yum provides */file` Search package that contain file
 * `yum remove package`Remove package
+* `yum autoremove package`Remove package plus unused dependencies
 * `yumdownloader package` download the RPM package
 
   * **NOTE**: require `yum -y install yum-utils`
