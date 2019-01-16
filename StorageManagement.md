@@ -73,11 +73,11 @@ Logical volume
 
 * `blkid /dev/vgname/volumename ` shows the UUID of a formatted volume group
 
-* `lvextend -l +1G -r vgname/volumename ` extends the logical volume *volumename* of one giga
+* `lvextend -L +1G -r vgname/volumename ` extends the logical volume *volumename* of one giga
 
   * `-r`  is used to resize file system
 
-* `lvreduce -l -1G -r vgname/volumename ` reduce the logical volume *volumename* of one giga
+* `lvreduce -L -1G -r vgname/volumename ` reduce the logical volume *volumename* of one giga
 
 ## Create and configure encrypted storage
 
