@@ -71,7 +71,7 @@ Logical volume
 
 * Before use a logical volume, a file system must be created on it
 
-* `blkit /dev/vgname/volumename ` shows the UUID of a formatted volume group
+* `blkid /dev/vgname/volumename ` shows the UUID of a formatted volume group
 
 * `lvextend -l +1G -r vgname/volumename ` extends the logical volume *volumename* of one giga
 
