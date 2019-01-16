@@ -280,6 +280,7 @@ Add disk
 Remove disk
 
 * `mdadm /dev/md0 --fail /dev/sdc1 --remove /dev/sdc1`
+  
   `mdadm --grow /dev/md0 --raid-devices=2`
 
   It mark disk as failed and remove it. After the size of array must be adjusted
