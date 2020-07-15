@@ -11,7 +11,7 @@ Boot sequence:
 
 * POST (PowerOn Self Test) -> Find disk -> Inside disk there's bootloader -> bootloader load kernel -> kernel load init process
 
-* Systemd is the defuault init process in CentOS
+* Systemd is the default init process in CentOS
 * Systemd starts services. Last service started will be a shell
 
 
