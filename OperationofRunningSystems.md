@@ -85,11 +85,22 @@ References:
 
     It shows the kernel boot parameter
 
-* When the changes were inserted in /etc/default/grub they must be inserted in configuration file used directly by Grub2 that is /boot/grub2/grub.cfg. To to this execute:
+* check the firmware before compilation
 
-  `grub2-mkconfig -o /boot/grub2/grub.cfg`
+  `ls -larth /sys/firmware`
 
-* 
+* if its efi then
+
+  `grub2-mkconfig -o /boot/efi/EFI/centos/grub.cfg`
+        
+   else
+
+  `grub2-mkconfig -o /boot/grub2/grub.cfg`       
+
+* if no errors during compilation then reboot otherwise kernel might enter panic state and wont reboot 
+
+  `reboot now`
+
 
 ## Diagnose and manage processes
 
