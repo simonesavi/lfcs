@@ -147,7 +147,7 @@ iptables
 * `iptables -P INPUT DROP`
   * Set default policy to DROP for INPUT chain
 * iptables rules syntax:
-  * `iptables {-A|I} chain [-i/o interface][-s/d ipaddres] [-p tcp|upd|icmp [--dport|--sport nn…]] -j [LOG|ACCEPT|DROP|REJECTED]`
+  * `iptables {-A|I} chain [-i/o interface][-s/d ipaddres] [-p tcp|upd|icmp [--dport|--sport nn…]] -j [LOG|ACCEPT|DROP|REJECT]`
   * `{-A|I} chain`
     * `-A` append as last rule
     * `-I` insert. This require a number after chain that indicate rule position
@@ -163,7 +163,7 @@ iptables
   * `-j [LOG|ACCEPT|DROP|REJECTED]`
     * `ACCEPT` accept packet
     * `DROP` silently rejected
-    * `REJECTED` reject the packet with an ICMP error packet
+    * `REJECT` reject the packet with an ICMP error packet
     * `LOG` log packet. <u>Evaluation of rules isn't blocked.</u>
 
 * E.g.
@@ -171,9 +171,9 @@ iptables
   * Accept all inbound loopback traffic
 * `iptables -A OUTPUT -o lo -j ACCEPT`
   * Accept all outbound loopback traffic
-* `iptable -A INPUT -p tcp --dport 22 -j ACCEPT`
+* `iptables -A INPUT -p tcp --dport 22 -j ACCEPT`
   * Accept all inbound traffic for tcp port 22
-* `iptable -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT`
+* `iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT`
   * This is a rule that is used to ACCEPT all traffic generated as a response of an inbound connection that was accepted. E.g. if incoming traffic for web server on port 80 was accepted, this rule permits to response traffic to exit from system without inserting specific rules in OUTPUT chain
 
 
