@@ -851,4 +851,4 @@ References:
 
   *  Cmnd_Alias SOFTWARE = /bin/rpm,/usr/bin/up2date, /usr/bin/yum
 
-    SOFTWARE can be used in sodo configuration rows
+    SOFTWARE can be used in sudo configuration rows
