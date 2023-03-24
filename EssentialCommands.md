@@ -107,11 +107,11 @@ References:
 
   * `-o` or, it is used to combine two conditions. \ is escape to avoid that ( or ) will be interpreted by bash shell
 
-* f`ind . -samefile file`
+* `find . -samefile file`
 
   * Find all files that have same i-node of file
 
-* f`ind . \! -user owner` 
+* `find . \! -user owner` 
 
   * It will show all files that aren't owned by user owner. `!` means negation, but must be escaped by \ to  not be interpreted by bash shell
 
