@@ -18,7 +18,7 @@
 
   * `gdisk /dev/sda` -> `x` (expert) -> `z` (zap)
 
-* Convert MBT to GPT
+* Convert MBR to GPT
 
   * `gdisk /dev/sda` -> `W` -> `Y`
 
