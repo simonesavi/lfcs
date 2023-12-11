@@ -222,7 +222,7 @@ References:
 
 * `uniq file`Remove equal consecutive rows
 
-  * `uniq -w 2 fle`
+  * `uniq -w 2 file`
 
     Remove equal consecutive rows comparing only first two characters
 

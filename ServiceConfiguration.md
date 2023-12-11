@@ -421,11 +421,11 @@ Manage storage volume
 
 * Create a Storage Pool:
 
-  * `virsh pool-define-as spool dir - - - - "/media/vdisk/`
-  * `virsh pool-build`
-  * `virsh pool-start`
+  * `virsh pool-define-as spool dir - - - - "/media/vdisk/"`
+  * `virsh pool-build spool`
+  * `virsh pool-start spool`
 
-  * `virsh pool-autostart`
+  * `virsh pool-autostart spool`
 
 * In files `/etc/libvirt/storage/*.xml` you can find info about storage pool
 
